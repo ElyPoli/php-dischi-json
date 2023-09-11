@@ -27,14 +27,32 @@
 
 <body>
     <div id="app">
-        <ul class="list-group" v-for="album in albumsList">
-            <li class="list-group-item">{{ album.title }}</li>
-            <li class="list-group-item">{{ album.author }}</li>
-            <li class="list-group-item">{{ album.year }}</li>
-            <li class="list-group-item">
-                <img v-bind:src="album.poster" v-bind:alt="album.title" style="height: 100px;">
-            </li>
-        </ul>
+        <header class="d-flex align-items-center justify-content-around pt-4 pb-4">
+            <img src="img/spotify-logo.png" alt="spotify">
+            <h1 class="m-0">Your music albums</h1>
+        </header>
+
+        <main class="pt-4 pb-4">
+            <div class="container mt-4 mb-4">
+                <div class="row row-cols-2 row-cols-md-3 gy-5">
+                    <div class="col d-flex justify-content-center align-items-center" v-for="album in albumsList">
+                        <div class="card">
+                            <img v-bind:src="album.poster" v-bind:alt="album.title">
+                            <div class="card-body p-0 pt-3 text-center">
+                                <h5 class="card-title fw-bold"> {{ album.title }} </h5>
+                                <p class="card-text fst-italic"> {{ album.author }} </p>
+                                <p class="card-text fw-bold"> {{ album.year }} </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="text-center pt-4 pb-4">
+            <p class="m-0 fw-bold fst-italic">Your music albums</p>
+        </footer>
+
     </div>
 
     <!-- Bootstrap Js -->
