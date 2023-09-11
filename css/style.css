@@ -15,6 +15,10 @@ header > img {
     height: 50px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .card {
     color: #ffffff;
     background-color: #112030;
@@ -23,4 +27,49 @@ header > img {
     padding: 2rem 2rem;
     height: 100%;
     width: 300px;
+    position: relative;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.card:hover {
+    transform: scale(.98);
+}
+
+.overlay {
+    opacity: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    height: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(6, 19, 31, 0.5);
+}
+
+.overlay > i {
+    font-size: 3rem;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+.offcanvas {
+    color: #ffffff;
+    background-color: #1d2d3c;
+}
+
+.offcanvas.offcanvas-start {
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+.my-offcanvas-card {
+    background-color: transparent;
+    height: auto;
 }

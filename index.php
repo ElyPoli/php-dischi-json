@@ -36,12 +36,38 @@
             <div class="container mt-4 mb-4">
                 <div class="row row-cols-2 row-cols-md-3 gy-5">
                     <div class="col d-flex justify-content-center align-items-center" v-for="album in albumsList">
-                        <div class="card">
-                            <img v-bind:src="album.poster" v-bind:alt="album.title">
-                            <div class="card-body p-0 pt-3 text-center">
-                                <h5 class="card-title fw-bold"> {{ album.title }} </h5>
-                                <p class="card-text fst-italic"> {{ album.author }} </p>
-                                <p class="card-text fw-bold"> {{ album.year }} </p>
+                        <a href="#offcanvasAlbum" data-bs-toggle="offcanvas" role="button">
+                            <!-- Card album -->
+                            <div class="card">
+                                <div class="overlay">
+                                    <i class="fa-solid fa-circle-play"></i>
+                                </div>
+                                <img v-bind:src="album.poster" v-bind:alt="album.title">
+                                <div class="card-body p-0 pt-3 text-center">
+                                    <h5 class="card-title fw-bold"> {{ album.title }} </h5>
+                                    <p class="card-text fst-italic"> {{ album.author }} </p>
+                                    <p class="card-text fw-bold"> {{ album.year }} </p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Singolo album - dettagli -->
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasAlbum">
+                            <div class="offcanvas-header">
+                                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body d-flex justify-content-center align-items-center">
+                                <div class="card my-offcanvas-card">
+                                    <div class="overlay">
+                                        <i class="fa-solid fa-circle-play"></i>
+                                    </div>
+                                    <img v-bind:src="album.poster" v-bind:alt="album.title">
+                                    <div class="card-body p-0 pt-3 text-center">
+                                        <h5 class="card-title fw-bold"> {{ album.title }} </h5>
+                                        <p class="card-text fst-italic"> {{ album.author }} </p>
+                                        <p class="card-text fw-bold"> {{ album.year }} </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
