@@ -18,15 +18,28 @@
     <!-- Custom css -->
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- Axios.js -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     <!-- Vue.js -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </head>
 
 <body>
+    <div id="app">
+        <ul class="list-group" v-for="album in albumsList">
+            <li class="list-group-item">{{ album.title }}</li>
+            <li class="list-group-item">{{ album.author }}</li>
+            <li class="list-group-item">{{ album.year }}</li>
+            <li class="list-group-item">
+                <img v-bind:src="album.poster" v-bind:alt="album.title" style="height: 100px;">
+            </li>
+        </ul>
+    </div>
 
     <!-- Bootstrap Js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-    
+
     <!-- Custom Js -->
     <script src="js/main.js"></script>
 </body>

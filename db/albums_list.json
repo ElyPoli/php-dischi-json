@@ -1,8 +1,38 @@
 [
   {
-    "author": "",
-    "title": "",
-    "year": "",
-    "poster": ""
+    "author": "Brymir",
+    "title": "Breathe Fire to the Sun",
+    "year": 2011,
+    "poster": "https://m.media-amazon.com/images/I/51J2LzavEGL._UF1000,1000_QL80_.jpg"
+  },
+  {
+    "author": "Dwarrowdelf",
+    "title": "Evenstar",
+    "year": 2020,
+    "poster": "https://m.media-amazon.com/images/I/51aeKFZrD1L._UXNaN_FMjpg_QL85_.jpg"
+  },
+  {
+    "author": "Summoning",
+    "title": "Old Mornings Dawn",
+    "year": 2013,
+    "poster": "https://m.media-amazon.com/images/I/81KH51xAUpL._UF1000,1000_QL80_.jpg"
+  },
+  {
+    "author": "Elderwind",
+    "title": "The Magic of Nature",
+    "year": "2012",
+    "poster": "https://m.media-amazon.com/images/I/51z5XVyLUeL._UXNaN_FMjpg_QL85_.jpg"
+  },
+  {
+    "author": "Keys of Orthanc",
+    "title": "Dush agh Golnauk",
+    "year": "2018",
+    "poster": "https://m.media-amazon.com/images/I/51bnn52bOzL._UXNaN_FMjpg_QL85_.jpg"
+  },
+  {
+    "author": "Sickle of Dust",
+    "title": "In the Wake of the Night",
+    "year": "2019",
+    "poster": "https://f4.bcbits.com/img/a2518151047_10.jpg"
   }
 ]
