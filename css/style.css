@@ -15,10 +15,6 @@ header > img {
     height: 50px;
 }
 
-a {
-    text-decoration: none;
-}
-
 .card {
     color: #ffffff;
     background-color: #112030;
@@ -51,6 +47,7 @@ a {
 
 .overlay > i {
     font-size: 3rem;
+    color: #ffffff;
 }
 
 .card:hover .overlay {
@@ -72,4 +69,8 @@ a {
 .my-offcanvas-card {
     background-color: transparent;
     height: auto;
+}
+
+.my-form {
+    background-color: #112030;
 }
